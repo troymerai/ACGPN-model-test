@@ -1,3 +1,6 @@
+import 'package:acgpn_test/src/binding/initial_binding.dart';
+import 'package:acgpn_test/src/config/app_router.dart';
+import 'package:acgpn_test/src/pages/login_page/loginscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(),
       initialBinding: InitBinding(),
       onGenerateRoute: AppRouter.onGenerateRoute,
-      home: OnboardingScreen(),
+      home: LoginScreen(),
     );
   }
 }
